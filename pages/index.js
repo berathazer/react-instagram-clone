@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiFillFacebook,AiOutlineDown } from "react-icons/ai";
 
 export default function Home() {
   const [username, setUsername] = useState("");
@@ -113,7 +113,7 @@ export default function Home() {
                         setPassword(e.target.value);
                       }}
                     />
-                    <button onClick={typeSelector} className={`text-[14px] font-semibold pr-2 ${password.length>0 ? "visible" : "hidden"}`}>Göster</button>
+                    <button onClick={typeSelector} className={`text-[14px] font-semibold pr-2 ${password.length>0 ? "visible" : "hidden"}`}>{type === "password" ? "Göster" : "Gizle"}</button>
                   </div>
               </div>}
 
@@ -201,7 +201,7 @@ export default function Home() {
       {/*Center end */}      
 
       {/* Footer */}        
-        <div className="w-full h-[105px] flex items-center justify-center flex-col mt-[8px]">
+        <div className="w-full h-[105px] flex items-center justify-center flex-col mt-[52px] ">
 
            <div className="flex items-center justify-center h-[23px]">
             <div className="text-[12px] font-normal text-textLink mx-2 mb-3"><a href="" className="mt-[-2px] mb-[-3px]">Meta</a></div>
@@ -230,17 +230,23 @@ export default function Home() {
            
            </div>
 
-           <div className="w-[50px] h-4">
-            <label htmlFor="" className="flex items-center text-textLink justify-center h-full w-full text-[12px]">
-              <span>Türkçe</span> 
-              <span>-</span>
+           <div className="flex items-center justify-center text-[12px] text-textLink gap-x-4 py-3 mb-[52px]">
+            <div className="w-[50px] h-4">
+              <label htmlFor="" className="flex items-center justify-center h-full w-full  gap-x-1">
+                <span>Türkçe</span> 
+                <span><AiOutlineDown/></span>
+                
               </label>
-            <select name="" id="" className="h-full opacity-0 w-full text-[12px] relative bottom-[18px] cursor-pointer  outline-none border-none border-0   bg-slate-50">
-              <option value="Türkçe" className="hover:opacity-100">Türkçe</option>
-              <option value="Türkçe" className="hover:opacity-100">İngilizce</option>
-              <option value="Türkçe" className="hover:opacity-100">İspanyolca</option>
-            </select>
+              <select name="" id="" className="h-full opacity-0 w-full  relative bottom-[18px] cursor-pointer  outline-none border-none border-0   bg-slate-50">
+                <option value="Türkçe" className="hover:opacity-100">Türkçe</option>
+                <option value="Türkçe" className="hover:opacity-100">İngilizce</option>
+                <option value="Türkçe" className="hover:opacity-100">İspanyolca</option>
+              </select>
+              
+              </div>
+              <span>© 2022 Instagram from Meta</span>
            </div>
+           
         </div>  
       {/* Footer end*/} 
     </div>
