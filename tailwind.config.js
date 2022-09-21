@@ -9,9 +9,12 @@ module.exports = {
       animation:{
         'fade-in':"fade-in 1s linear"
       },
+      outlineColor:{
+        instagram:"#e1306c"//"linear-gradient(45deg,#405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
+      },
       textColor:{
         primary: "#0095f6",
-        textLink: "#8e8e8e",
+        textLink: "#8E8E8E",
       },
       backgroundColor:{
         'login-input': "#fafafa",
