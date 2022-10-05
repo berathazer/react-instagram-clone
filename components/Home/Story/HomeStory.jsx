@@ -33,7 +33,7 @@ const HomeStory = () => {
       <Carousel
         id="story-carousel"
         responsive={responsive}
-        className="w-[468px] rounded-md bg-white text-[#262626] py-4 px-0 pl-[12px] border"
+        className="w-[468px] rounded-md bg-white text-[#262626] py-4 px-0 pl-[12px] border-[#dbdbdb] border"
       >
       {dummyData.map((data)=>(data))}
 

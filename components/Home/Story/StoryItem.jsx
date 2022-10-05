@@ -12,9 +12,9 @@ const StoryItem = () => {
             <div className="w-[66px] h-[66px] flex items-center justify-center">
               <img
                 src={`https://picsum.photos/id/${Math.round(
-                  (Math.random() * 100)
+                  (Math.random() * 50)
                 )}/200/300`}
-                className="w-[56px] h-[56px] rounded-full outline outline-3  outline-offset-2 outline-instagram"
+                className="w-[56px] h-[56px] bg-fixed bg-center bg-no-repeat rounded-full outline outline-3  outline-offset-2 outline-instagram"
               />
             </div>
             <div className="text-[12px]">

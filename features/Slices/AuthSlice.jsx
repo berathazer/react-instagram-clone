@@ -7,7 +7,8 @@ name:"auth",
 initialState:{
      auth:false,
      username:"",
-     password:""
+     password:"",
+     page:"home"
 },
 reducers:{
      
@@ -15,6 +16,10 @@ reducers:{
         state.username = action.payload.username
         state.password = action.payload.password
         localStorage.setItem("currentUser",`${state.username} : ${state.password}`);
+    },
+
+    setCurrentPage:(state,action)=>{
+        localStorage.setItem("currentPage",action.payload);
     }
    }
 })

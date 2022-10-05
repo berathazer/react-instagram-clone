@@ -7,7 +7,13 @@ module.exports = {
   theme: {
     extend: {
       animation:{
-        'fade-in':"fade-in 1s linear"
+        'fade-in':"fade-in 1s linear",
+      },
+      minHeight:{
+        'inboxScreen':"calc(100vh - 60px)"
+      },
+      flex:{
+        "flex-input":"0 1 auto",
       },
       outlineColor:{
         instagram:"#e1306c"//"linear-gradient(45deg,#405de6,#5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
@@ -27,7 +33,7 @@ module.exports = {
         'sliderPhoto3':"url('https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png')",
       },
       backgroundPosition:{
-        "left-4":"-46px 0px"
+        "left-4":"-46px 0px",
       },
       backgroundSize:{
         'fitScreen':"468.32px 634.15px",
